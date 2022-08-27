@@ -27,18 +27,18 @@ incluirTemplate('header');
     <form  class="border p-3 form row g-3 needs-validation" novalidate id="form1" name="form1" method="post" action="../control/operaciones.php">
       <div class="input-control">
         <label class="form-label">INGRESE UN NUMERO</label>
-        <input name="numero1_form" class="form-control" type="text" id="numero1_form"> 
+        <input name="numero1_form" class="form-control" type="text" id="numero1_form" required> 
       </div>
 
       <div class="input-control">
         <label class="form-label">INGRESE UN NUMERO</label>
-        <input name="numero2_form" class="form-control" type="text" id="numero2_form">
+        <input name="numero2_form" class="form-control" type="text" id="numero2_form" required>
       </div>
       <div class="input-control">
       <label class="form-label">Seleccione  la operacion a realizar</label>
       
-      <select class="form-control" id="operaciones_form" name="operaciones_form">
-      <option selected>Seleccione</option>
+      <select class="form-control" id="operaciones_form" name="operaciones_form" required>
+        <option selected disabled value="">Seleccione</option>
         <option value="suma">SUMA</option>
         <option value="resta">RESTA</option>
         <option value="multiplicacion">MULTIPLICACION</option> 

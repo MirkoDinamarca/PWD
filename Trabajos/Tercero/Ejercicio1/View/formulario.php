@@ -9,7 +9,7 @@ incluirTemplate('header')
         <form id="form" action="../Controller/Formulario.php" method="POST" enctype="multipart/form-data">
 
             <div class="form-group">
-                <input type="file" name="adjunto" class="form-control">
+                <input type="file" name="adjunto" class="form-control" required>
             </div>
 
             <div class="mt-2">

@@ -15,12 +15,12 @@
 
 <?php
     if ($_POST){
-        $num1 = $_POST['numero1_form'] ;
-        $num2 = $_POST['numero2_form'] ;
+        $num1 = $_POST['numero1_form'] ?? '';
+        $num2 = $_POST['numero2_form'] ?? '';
         $operacion = $_POST['operaciones_form'];
       
         
-     if(is_numeric($num1) && is_numeric($num2)){
+     if(is_numeric($num1) && is_numeric($num2) && $operacion != ''){
         if( $operacion == "suma"){
             //REDIRECCIONAR -> header ('Location: '.'mayorEdad.php');
             $resultado = $num1 + $num2 ;
